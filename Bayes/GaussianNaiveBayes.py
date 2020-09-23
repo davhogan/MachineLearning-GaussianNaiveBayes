@@ -109,7 +109,7 @@ def test(df,pos_means,neg_means,pos_std,neg_std):
     return (confusion_matrix,accuracy,precision,recall)
 
 #Read in the data
-df = pd.read_csv("C:\\Users\\David\\Documents\\CS445\\spambase.csv")
+df = pd.read_csv("spambase.csv")
 
 #Create training and testing dataframes
 split = np.random.rand(len(df)) < 0.5
